@@ -37,7 +37,7 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         //高炉
         offerBlasting(consumer, GOLDSTONE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLDSTONE, 0.7f, 100, "goldstone");
         offerBlasting(consumer, SMOOTH_GOLDSTONE, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SMOOTH_GOLDSTONE, 0.7f, 100, "smooth_goldstone");
-        offerBlasting(consumer, DRIED_WALNT, RecipeCategory.BUILDING_BLOCKS, ModItems.DRIED_WALNT, 0.7f, 100, "dried_walnut");
+        offerBlasting(consumer, DRIED_WALNT, RecipeCategory.BUILDING_BLOCKS, ModItems.DRIED_WALNUT, 0.7f, 100, "dried_walnut");
         //切石机
         offerStonecuttingRecipe(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.CHISELED_GOLDSTONE_BRICKS, ModBlocks.GOLDSTONE, 1);
         offerStonecuttingRecipe(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLDSTONE_BRICKS_SLAB, ModBlocks.GOLDSTONE, 2);
