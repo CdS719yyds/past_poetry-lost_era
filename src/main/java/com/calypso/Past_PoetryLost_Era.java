@@ -2,6 +2,7 @@ package com.calypso;
 
 import com.calypso.block.ModBlocks;
 import com.calypso.item.ModItemGroups;
+import com.calypso.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
@@ -22,6 +23,7 @@ public class Past_PoetryLost_Era implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		ModItems.registerItems();
 		ModItemGroups.registerGroups();
 		ModBlocks.registerModBlocks();
 		//原木去皮

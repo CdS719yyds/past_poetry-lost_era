@@ -1,6 +1,7 @@
 package com.calypso.datagen;
 
 import com.calypso.block.ModBlocks;
+import com.calypso.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;

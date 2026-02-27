@@ -44,6 +44,11 @@ public class ModModelsProvider extends FabricModelProvider {
     //物品模型
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        itemModelGenerator.register(ModItems.PRIMEVAL_JUNGLE_HANGING_SIGN, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.WALNUT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DRIED_WALNUT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WALNUT_MEAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WALNUT_HANGING_SIGN, Models.GENERATED);
     }
 }

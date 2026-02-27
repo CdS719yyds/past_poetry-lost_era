@@ -121,6 +121,13 @@ public class ModItemGroups {
                             entries.add(ModBlocks.WALNUT_PRESSURE_PLATE);
                             //button按钮
                             entries.add(ModBlocks.WALNUT_BUTTON);
+                            //告示牌
+                            entries.add(ModItems.WALNUT_SIGN);
+                            entries.add(ModItems.WALNUT_HANGING_SIGN);
+                            //other其他
+                            entries.add(ModItems.WALNUT);
+                            entries.add(ModItems.DRIED_WALNUT);
+                            entries.add(ModItems.WALNUT_MEAT);
                         }).build()
         );
     }
