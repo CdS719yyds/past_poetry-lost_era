@@ -84,9 +84,12 @@ public class ModItemGroups {
                             entries.add(ModBlocks.PRIMEVAL_JUNGLE_BUTTON);
                             //sapling树苗
                             entries.add(ModBlocks.PRIMEVAL_JUNGLE_SAPLING);
-                            //告示牌
+                            //sign告示牌
                             entries.add(ModItems.PRIMEVAL_JUNGLE_SIGN);
                             entries.add(ModItems.PRIMEVAL_JUNGLE_HANGING_SIGN);
+                            //boat船
+                            entries.add(ModItems.PRIMEVAL_JUNGLE_BOAT);
+                            entries.add(ModItems.PRIMEVAL_JUNGLE_CHEST_BOAT);
                         }).build()
         );
         //核桃林
@@ -121,9 +124,14 @@ public class ModItemGroups {
                             entries.add(ModBlocks.WALNUT_PRESSURE_PLATE);
                             //button按钮
                             entries.add(ModBlocks.WALNUT_BUTTON);
-                            //告示牌
+                            //sapling树苗
+                            entries.add(ModBlocks.WALNUT_SAPLING);
+                            //sign告示牌
                             entries.add(ModItems.WALNUT_SIGN);
                             entries.add(ModItems.WALNUT_HANGING_SIGN);
+                            //boat船
+                            entries.add(ModItems.WALNUT_BOAT);
+                            entries.add(ModItems.WALNUT_CHEST_BOAT);
                             //other其他
                             entries.add(ModItems.WALNUT);
                             entries.add(ModItems.DRIED_WALNUT);

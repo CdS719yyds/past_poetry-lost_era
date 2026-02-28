@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "past_poetry-lost_era:block/smooth_goldstone_slab"
+    },
+    "type=double": {
+      "model": "past_poetry-lost_era:block/smooth_goldstone_slab_double"
+    },
+    "type=top": {
+      "model": "past_poetry-lost_era:block/smooth_goldstone_slab_top"
+    }
+  }
+}

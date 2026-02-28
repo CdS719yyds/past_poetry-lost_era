@@ -92,12 +92,20 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.WALNUT_BUTTON, "核桃按钮");
         //树苗
         translationBuilder.add(ModBlocks.PRIMEVAL_JUNGLE_SAPLING, "原始丛林树苗");
+
+        translationBuilder.add(ModBlocks.WALNUT_SAPLING, "核桃树苗");
         //告示牌
         translationBuilder.add(ModItems.PRIMEVAL_JUNGLE_SIGN, "原始丛林告示牌");
         translationBuilder.add(ModItems.PRIMEVAL_JUNGLE_HANGING_SIGN, "悬挂式原始丛林告示牌");
 
         translationBuilder.add(ModItems.WALNUT_SIGN, "核桃告示牌");
         translationBuilder.add(ModItems.WALNUT_HANGING_SIGN, "悬挂式核桃告示牌");
+        //船
+        translationBuilder.add(ModItems.PRIMEVAL_JUNGLE_BOAT, "原始丛林船");
+        translationBuilder.add(ModItems.PRIMEVAL_JUNGLE_CHEST_BOAT, "原始丛林箱船");
+
+        translationBuilder.add(ModItems.WALNUT_BOAT, "核桃船");
+        translationBuilder.add(ModItems.WALNUT_CHEST_BOAT, "核桃箱船");
         //其他
         translationBuilder.add(ModItems.WALNUT, "核桃");
         translationBuilder.add(ModItems.DRIED_WALNUT, "干核桃");

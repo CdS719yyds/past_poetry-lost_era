@@ -1,6 +1,7 @@
 package com.calypso;
 
 import com.calypso.block.ModBlocks;
+import com.calypso.entity.ModBoats;
 import com.calypso.item.ModItemGroups;
 import com.calypso.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -26,6 +27,7 @@ public class Past_PoetryLost_Era implements ModInitializer {
 		ModItems.registerItems();
 		ModItemGroups.registerGroups();
 		ModBlocks.registerModBlocks();
+		ModBoats.registerBoats();
 		//原木去皮
 		StrippableBlockRegistry.register(ModBlocks.PRIMEVAL_JUNGLE_LOG, ModBlocks.STRIPPED_PRIMEVAL_JUNGLE_LOG);
 		StrippableBlockRegistry.register(ModBlocks.PRIMEVAL_JUNGLE_WOOD, ModBlocks.STRIPPED_PRIMEVAL_JUNGLE_WOOD);

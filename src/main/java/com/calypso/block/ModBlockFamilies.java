@@ -59,8 +59,6 @@ public class ModBlockFamilies {
             .pressurePlate(ModBlocks.PRIMEVAL_JUNGLE_PRESSURE_PLATE)
             .button(ModBlocks.PRIMEVAL_JUNGLE_BUTTON)
             .sign(ModBlocks.PRIMEVAL_JUNGLE_SIGN, ModBlocks.PRIMEVAL_JUNGLE_WALL_SIGN)
-            .group("wooden")
-            .unlockCriterionName("wooden")
             .build();
     //核桃林
     public static final BlockFamily WALNUT_PLANKS = register(ModBlocks.WALNUT_PLANKS)

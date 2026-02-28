@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "past_poetry-lost_era:block/smooth_goldstone",
+    "side": "past_poetry-lost_era:block/smooth_goldstone_slab_side"
+  }
+}

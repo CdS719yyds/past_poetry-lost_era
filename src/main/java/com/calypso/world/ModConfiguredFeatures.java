@@ -28,8 +28,14 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> PRIMEVAL_JUNGLE_TREE_NO_VINE_KEY = registerKey("primeval_jungle_tree_no_vine");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PRIMEVAL_JUNGLE_TREE_KEY = registerKey("primeval_jungle_tree");
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WALNUT_TREE_KEY = registerKey("walnut_tree");
+
     private static TreeFeatureConfig.Builder primeval_jungle() {
         return builder(ModBlocks.PRIMEVAL_JUNGLE_LOG, ModBlocks.PRIMEVAL_JUNGLE_LEAVES, 4, 8, 0, 2);
+    }
+
+    private static TreeFeatureConfig.Builder walnut() {
+        return builder(ModBlocks.WALNUT_LOG, ModBlocks.WALNUT_LEAVES, 3, 2, 3, 2);
     }
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
@@ -50,7 +56,9 @@ public class ModConfiguredFeatures {
                         TrunkVineTreeDecorator.INSTANCE,
                         new LeavesVineTreeDecorator(0.25F)
                 )
-        ).ignoreVines().build());;
+        ).ignoreVines().build());
+
+        register(context, WALNUT_TREE_KEY, Feature.TREE, walnut().ignoreVines().build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String id) {

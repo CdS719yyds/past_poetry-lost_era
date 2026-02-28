@@ -82,7 +82,8 @@ public class ModLootTablesProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.PRIMEVAL_JUNGLE_DOOR, doorDrops(ModBlocks.PRIMEVAL_JUNGLE_DOOR));
         addDrop(ModBlocks.WALNUT_DOOR, doorDrops(ModBlocks.WALNUT_DOOR));
         //树叶
-        addDrop(ModBlocks.PRIMEVAL_JUNGLE_LEAVES, leavesDrops(ModBlocks.PRIMEVAL_JUNGLE_LEAVES, ModBlocks.PRIMEVAL_JUNGLE_SAPLING, 0.0025f));
+        addDrop(ModBlocks.PRIMEVAL_JUNGLE_LEAVES, leavesDrops(ModBlocks.PRIMEVAL_JUNGLE_LEAVES, ModBlocks.PRIMEVAL_JUNGLE_SAPLING, 0.025f));
+        addDrop(ModBlocks.WALNUT_LEAVES, leavesDrops(ModBlocks.WALNUT_LEAVES, ModBlocks.WALNUT_SAPLING, 0.025f));
     }
 
     //多物品掉落函数

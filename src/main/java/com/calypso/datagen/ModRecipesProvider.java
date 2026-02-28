@@ -72,8 +72,10 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         offerWallRecipe(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLDSTONE_WALL, ModBlocks.GOLDSTONE);
         offerWallRecipe(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.GOLDSTONE_BRICKS_WALL, ModBlocks.GOLDSTONE_BRICKS);
         offerWallRecipe(consumer, RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLEGOLDSTONE_WALL, ModBlocks.COBBLEGOLDSTONE);
+        //物品一合一
+        offerModNumberItemRecipe(consumer, ModItems.WALNUT_MEAT, ModBlocks.WALNUT_SAPLING.asItem(), 1, "walnut");
         //物品一合二
-        offerModNumberItemRecipe(consumer, ModItems.WALNUT_MEAT, ModItems.DRIED_WALNUT, 2, "primeval_jungle_log");
+        offerModNumberItemRecipe(consumer, ModItems.WALNUT_MEAT, ModItems.DRIED_WALNUT, 2, "dried_walnut");
         //木头
         offerModPlanksRecipe(consumer, ModBlocks.PRIMEVAL_JUNGLE_PLANKS, ModBlocks.PRIMEVAL_JUNGLE_LOG, 4, "primeval_jungle_log");
         offerModPlanksRecipe(consumer, ModBlocks.PRIMEVAL_JUNGLE_PLANKS, ModBlocks.STRIPPED_PRIMEVAL_JUNGLE_LOG, 4, "sipped_primeval_jungle_log");

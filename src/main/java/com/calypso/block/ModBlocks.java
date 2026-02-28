@@ -2,6 +2,7 @@ package com.calypso.block;
 
 import com.calypso.Past_PoetryLost_Era;
 import com.calypso.world.tree.PrimevalJungleTreeSaplingGenerator;
+import com.calypso.world.tree.WalnutTreeSaplingGenerator;
 import com.terraformersmc.terraform.sign.block.TerraformHangingSignBlock;
 import com.terraformersmc.terraform.sign.block.TerraformSignBlock;
 import com.terraformersmc.terraform.sign.block.TerraformWallHangingSignBlock;
@@ -168,8 +169,11 @@ public class ModBlocks {
         //trapdoor活板门
         public static final Block WALNUT_TRAPDOOR = register("walnut_trapdoor",
                 new TrapdoorBlock(AbstractBlock.Settings.copy(WALNUT_PLANKS), BlockSetType.OAK));
+        //sapling树苗
+        public static final Block WALNUT_SAPLING = register("walnut_sapling",
+                new SaplingBlock(new WalnutTreeSaplingGenerator(), AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)));
         //sign告示牌
-        //材质文件目录
+                //材质文件目录
         public static final Identifier WALNUT_SIGN_TEXTURE = new Identifier(Past_PoetryLost_Era.MOD_ID, "entity/signs/walnut");
         public static final Identifier WALNUT_HANGING_SIGN_TEXTURE = new Identifier(Past_PoetryLost_Era.MOD_ID, "entity/signs/hanging/walnut");
         public static final Identifier WALNUT_HANGING_SIGN_GUI = new Identifier(Past_PoetryLost_Era.MOD_ID, "textures/gui/hanging_signs/walnut");

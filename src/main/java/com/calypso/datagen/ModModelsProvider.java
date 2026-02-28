@@ -40,15 +40,20 @@ public class ModModelsProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSingleton(ModBlocks.WALNUT_LEAVES, TexturedModel.LEAVES);
 
         blockStateModelGenerator.registerTintableCross(ModBlocks.PRIMEVAL_JUNGLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.WALNUT_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
     //物品模型
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.PRIMEVAL_JUNGLE_HANGING_SIGN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PRIMEVAL_JUNGLE_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PRIMEVAL_JUNGLE_CHEST_BOAT, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.WALNUT, Models.GENERATED);
         itemModelGenerator.register(ModItems.DRIED_WALNUT, Models.GENERATED);
         itemModelGenerator.register(ModItems.WALNUT_MEAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.WALNUT_HANGING_SIGN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WALNUT_BOAT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.WALNUT_CHEST_BOAT, Models.GENERATED);
     }
 }

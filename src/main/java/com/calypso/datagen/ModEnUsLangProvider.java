@@ -92,12 +92,20 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.WALNUT_BUTTON, "Walnut Button");
         //树苗
         translationBuilder.add(ModBlocks.PRIMEVAL_JUNGLE_SAPLING, "Primeval Jungle Sapling");
+
+        translationBuilder.add(ModBlocks.WALNUT_SAPLING, "Walnut Sapling");
         //告示牌
         translationBuilder.add(ModItems.PRIMEVAL_JUNGLE_SIGN, "Primeval Jungle Sign");
         translationBuilder.add(ModItems.PRIMEVAL_JUNGLE_HANGING_SIGN, "Primeval Jungle Hanging Sign");
 
         translationBuilder.add(ModItems.WALNUT_SIGN, "Walnut Sign");
         translationBuilder.add(ModItems.WALNUT_HANGING_SIGN, "Walnut Hanging Sign");
+        //船
+        translationBuilder.add(ModItems.PRIMEVAL_JUNGLE_BOAT, "Primeval Jungle Boat");
+        translationBuilder.add(ModItems.PRIMEVAL_JUNGLE_CHEST_BOAT, "Primeval Jungle Chest Boat");
+
+        translationBuilder.add(ModItems.WALNUT_BOAT, "Walnut Boat");
+        translationBuilder.add(ModItems.WALNUT_CHEST_BOAT, "Walnut Chest Boat");
         //其他
         translationBuilder.add(ModItems.WALNUT, "Walnut");
         translationBuilder.add(ModItems.DRIED_WALNUT, "Dried Walnut");
