@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "past_poetry-lost_era:block/stripped_walnut_log",
+    "side": "past_poetry-lost_era:block/stripped_walnut_log"
+  }
+}

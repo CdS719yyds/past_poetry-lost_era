@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "past_poetry-lost_era:block/stripped_primeval_jungle_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "past_poetry-lost_era:block/stripped_primeval_jungle_wood"
+    },
+    "axis=z": {
+      "model": "past_poetry-lost_era:block/stripped_primeval_jungle_wood",
+      "x": 90
+    }
+  }
+}

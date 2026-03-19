@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "minecraft:leather"
+    }
+  },
+  "pattern": [
+    " M ",
+    "SMS",
+    " S "
+  ],
+  "result": {
+    "item": "past_poetry-lost_era:reinforced_binding"
+  },
+  "show_notification": true
+}

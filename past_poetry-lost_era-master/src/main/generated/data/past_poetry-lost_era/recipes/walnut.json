@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "past_poetry-lost_era:walnut_sapling"
+    }
+  ],
+  "result": {
+    "item": "past_poetry-lost_era:walnut_meat"
+  }
+}

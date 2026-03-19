@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "past_poetry-lost_era:block/walnut_planks"
+  }
+}

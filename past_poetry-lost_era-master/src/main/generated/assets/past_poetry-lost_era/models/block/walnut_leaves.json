@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "past_poetry-lost_era:block/walnut_leaves"
+  }
+}

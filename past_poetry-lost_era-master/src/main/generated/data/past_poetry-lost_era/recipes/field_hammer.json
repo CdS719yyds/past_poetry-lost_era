@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "past_poetry-lost_era:walnut_planks"
+    }
+  },
+  "pattern": [
+    "II ",
+    "IW ",
+    " W "
+  ],
+  "result": {
+    "item": "past_poetry-lost_era:field_hammer"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "minecraft:obsidian"
+    },
+    "S": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    " M ",
+    "SMS",
+    " S "
+  ],
+  "result": {
+    "item": "past_poetry-lost_era:obsidian_head"
+  },
+  "show_notification": true
+}

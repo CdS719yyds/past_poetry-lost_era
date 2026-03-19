@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "past_poetry-lost_era:block/mossy_cobblegoldstone_slab"
+    },
+    "type=double": {
+      "model": "past_poetry-lost_era:block/mossy_cobblegoldstone"
+    },
+    "type=top": {
+      "model": "past_poetry-lost_era:block/mossy_cobblegoldstone_slab_top"
+    }
+  }
+}

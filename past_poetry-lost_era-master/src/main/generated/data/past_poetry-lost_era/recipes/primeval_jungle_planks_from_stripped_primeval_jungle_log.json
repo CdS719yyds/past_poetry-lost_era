@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "stripped_primeval_jungle_log",
+  "ingredients": [
+    {
+      "item": "past_poetry-lost_era:stripped_primeval_jungle_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "past_poetry-lost_era:primeval_jungle_planks"
+  }
+}

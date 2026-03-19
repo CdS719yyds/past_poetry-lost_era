@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "minecraft:redstone"
+    },
+    "S": {
+      "item": "minecraft:ender_pearl"
+    }
+  },
+  "pattern": [
+    " M ",
+    "SMS",
+    " S "
+  ],
+  "result": {
+    "item": "past_poetry-lost_era:pulse_core"
+  },
+  "show_notification": true
+}

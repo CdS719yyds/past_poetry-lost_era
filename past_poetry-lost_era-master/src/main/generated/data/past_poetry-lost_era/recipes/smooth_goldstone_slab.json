@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "past_poetry-lost_era:smooth_goldstone"
+    }
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "item": "past_poetry-lost_era:smooth_goldstone_slab"
+  },
+  "show_notification": true
+}

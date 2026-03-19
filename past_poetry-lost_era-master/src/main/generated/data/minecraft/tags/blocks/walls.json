@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "past_poetry-lost_era:cobblegoldstone_wall",
+    "past_poetry-lost_era:cracked_goldstone_bricks_wall",
+    "past_poetry-lost_era:goldstone_wall",
+    "past_poetry-lost_era:goldstone_bricks_wall",
+    "past_poetry-lost_era:mossy_cobblegoldstone_wall",
+    "past_poetry-lost_era:mossy_goldstone_bricks_wall"
+  ]
+}

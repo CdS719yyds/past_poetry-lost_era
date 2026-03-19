@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "past_poetry-lost_era:block/primeval_jungle_sapling"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "past_poetry-lost_era:block/primeval_jungle_planks",
+    "side": "past_poetry-lost_era:block/primeval_jungle_planks",
+    "top": "past_poetry-lost_era:block/primeval_jungle_planks"
+  }
+}

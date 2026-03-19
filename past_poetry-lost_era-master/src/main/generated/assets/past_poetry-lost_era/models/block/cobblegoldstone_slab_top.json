@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "past_poetry-lost_era:block/cobblegoldstone",
+    "side": "past_poetry-lost_era:block/cobblegoldstone",
+    "top": "past_poetry-lost_era:block/cobblegoldstone"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "past_poetry-lost_era:primeval_jungle_planks"
+    }
+  },
+  "pattern": [
+    " I ",
+    " I ",
+    " W "
+  ],
+  "result": {
+    "item": "past_poetry-lost_era:warden_blade"
+  },
+  "show_notification": true
+}

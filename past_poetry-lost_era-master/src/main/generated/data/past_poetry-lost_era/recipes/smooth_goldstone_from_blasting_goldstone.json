@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.7,
+  "group": "smooth_goldstone",
+  "ingredient": {
+    "item": "past_poetry-lost_era:goldstone"
+  },
+  "result": "past_poetry-lost_era:smooth_goldstone"
+}

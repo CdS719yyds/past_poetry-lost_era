@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "past_poetry-lost_era:walnut_planks"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " M ",
+    "SMS",
+    " S "
+  ],
+  "result": {
+    "item": "past_poetry-lost_era:walnut_handle"
+  },
+  "show_notification": true
+}

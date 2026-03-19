@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "past_poetry-lost_era:goldstone_bricks"
+  },
+  "result": "past_poetry-lost_era:goldstone_brick_stairs"
+}

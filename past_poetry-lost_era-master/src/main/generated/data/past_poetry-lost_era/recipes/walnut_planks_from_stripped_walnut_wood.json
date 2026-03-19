@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "stripped_walnut_wood",
+  "ingredients": [
+    {
+      "item": "past_poetry-lost_era:stripped_walnut_wood"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "past_poetry-lost_era:walnut_planks"
+  }
+}

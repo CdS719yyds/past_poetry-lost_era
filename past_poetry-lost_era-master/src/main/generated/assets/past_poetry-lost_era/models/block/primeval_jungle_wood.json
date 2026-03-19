@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "past_poetry-lost_era:block/primeval_jungle_log",
+    "side": "past_poetry-lost_era:block/primeval_jungle_log"
+  }
+}

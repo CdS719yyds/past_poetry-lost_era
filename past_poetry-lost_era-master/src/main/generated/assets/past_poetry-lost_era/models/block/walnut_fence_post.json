@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/fence_post",
+  "textures": {
+    "texture": "past_poetry-lost_era:block/walnut_planks"
+  }
+}

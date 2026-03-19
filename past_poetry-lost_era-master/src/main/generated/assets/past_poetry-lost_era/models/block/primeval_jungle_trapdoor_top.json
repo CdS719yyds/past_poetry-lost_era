@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_orientable_trapdoor_top",
+  "textures": {
+    "texture": "past_poetry-lost_era:block/primeval_jungle_trapdoor"
+  }
+}

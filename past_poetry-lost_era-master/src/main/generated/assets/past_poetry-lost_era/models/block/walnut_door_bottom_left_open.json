@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom_left_open",
+  "textures": {
+    "bottom": "past_poetry-lost_era:block/walnut_door_bottom",
+    "top": "past_poetry-lost_era:block/walnut_door_top"
+  }
+}

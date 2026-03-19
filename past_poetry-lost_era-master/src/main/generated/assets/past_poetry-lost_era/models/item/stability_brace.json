@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "past_poetry-lost_era:item/stability_brace"
+  }
+}

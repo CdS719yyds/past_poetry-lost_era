@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "minecraft:feather"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    " M ",
+    "SMS",
+    " S "
+  ],
+  "result": {
+    "item": "past_poetry-lost_era:wind_charm"
+  },
+  "show_notification": true
+}

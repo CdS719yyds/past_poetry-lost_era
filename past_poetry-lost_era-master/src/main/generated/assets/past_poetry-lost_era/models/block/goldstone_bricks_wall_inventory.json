@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "past_poetry-lost_era:block/goldstone_bricks"
+  }
+}

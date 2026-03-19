@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "past_poetry-lost_era:primeval_jungle_log",
+    "past_poetry-lost_era:primeval_jungle_wood",
+    "past_poetry-lost_era:stripped_primeval_jungle_log",
+    "past_poetry-lost_era:stripped_primeval_jungle_wood",
+    "past_poetry-lost_era:primeval_jungle_wood_stairs",
+    "past_poetry-lost_era:primeval_jungle_wood_slab",
+    "past_poetry-lost_era:primeval_jungle_fence",
+    "past_poetry-lost_era:primeval_jungle_fence_gate",
+    "past_poetry-lost_era:primeval_jungle_button",
+    "past_poetry-lost_era:primeval_jungle_pressure_plate",
+    "past_poetry-lost_era:primeval_jungle_door",
+    "past_poetry-lost_era:primeval_jungle_trapdoor",
+    "past_poetry-lost_era:primeval_jungle_planks",
+    "past_poetry-lost_era:walnut_log",
+    "past_poetry-lost_era:walnut_wood",
+    "past_poetry-lost_era:stripped_walnut_log",
+    "past_poetry-lost_era:stripped_walnut_wood",
+    "past_poetry-lost_era:walnut_planks",
+    "past_poetry-lost_era:smooth_walnut",
+    "past_poetry-lost_era:walnut_wood_stairs",
+    "past_poetry-lost_era:walnut_wood_slab",
+    "past_poetry-lost_era:walnut_fence",
+    "past_poetry-lost_era:walnut_fence_gate",
+    "past_poetry-lost_era:walnut_button",
+    "past_poetry-lost_era:walnut_pressure_plate",
+    "past_poetry-lost_era:walnut_door",
+    "past_poetry-lost_era:walnut_trapdoor"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "past_poetry-lost_era:stripped_primeval_jungle_wood"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

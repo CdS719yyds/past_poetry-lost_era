@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "past_poetry-lost_era:block/goldstone"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cobblegoldstone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "past_poetry-lost_era:cobblegoldstone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:goldstone_from_blasting_cobblegoldstone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cobblegoldstone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:goldstone_from_blasting_cobblegoldstone"
+    ]
+  },
+  "sends_telemetry_event": false
+}

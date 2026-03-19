@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "past_poetry-lost_era:block/primeval_jungle_door_bottom",
+    "top": "past_poetry-lost_era:block/primeval_jungle_door_top"
+  }
+}

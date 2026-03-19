@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "past_poetry-lost_era:primeval_jungle_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "item": "past_poetry-lost_era:primeval_jungle_wood_stairs"
+  },
+  "show_notification": true
+}

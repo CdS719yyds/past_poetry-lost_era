@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "past_poetry-lost_era:block/primeval_jungle_pressure_plate"
+    },
+    "powered=true": {
+      "model": "past_poetry-lost_era:block/primeval_jungle_pressure_plate_down"
+    }
+  }
+}

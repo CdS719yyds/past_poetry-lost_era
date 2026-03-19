@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "past_poetry-lost_era:block/cobblegoldstone",
+    "side": "past_poetry-lost_era:block/cobblegoldstone",
+    "top": "past_poetry-lost_era:block/cobblegoldstone"
+  }
+}

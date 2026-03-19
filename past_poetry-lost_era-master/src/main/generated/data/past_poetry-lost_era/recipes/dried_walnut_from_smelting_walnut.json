@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 160,
+  "experience": 0.7,
+  "group": "dried_walnut",
+  "ingredient": {
+    "item": "past_poetry-lost_era:walnut"
+  },
+  "result": "past_poetry-lost_era:dried_walnut"
+}
