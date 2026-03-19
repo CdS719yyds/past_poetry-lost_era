@@ -1,5 +1,7 @@
 package com.calypso.datagen;
 
+import com.calypso.assembly.ModAssemblyContent;
+import com.calypso.assembly.ToolAssemblyRegistry;
 import com.calypso.block.ModBlocks;
 import com.calypso.item.ModItemGroups;
 import com.calypso.item.ModItems;
@@ -113,5 +115,43 @@ public class ModEnUsLangProvider extends FabricLanguageProvider {
         //物品栏
         translationBuilder.add(ModItemGroups.PRIMEVAL_JUNGLE,"Primeval Jungle");
         translationBuilder.add(ModItemGroups.WALNUT_FOREST,"Walnut Forest");
+        translationBuilder.add(ModAssemblyContent.ASSEMBLY_TOOLKIT, "Assembly Toolkit");
+        ToolAssemblyRegistry.toolItems().forEach(item -> translationBuilder.add(item, item.definition().name().english()));
+        ToolAssemblyRegistry.partItems().forEach(item -> translationBuilder.add(item, item.definition().name().english()));
+
+        translationBuilder.add("assembly_slot.head", "Head");
+        translationBuilder.add("assembly_slot.binding", "Binding");
+        translationBuilder.add("assembly_slot.handle", "Handle");
+        translationBuilder.add("assembly_slot.module", "Module");
+        translationBuilder.add("assembly_slot.blade", "Blade");
+        translationBuilder.add("assembly_slot.guard", "Guard");
+        translationBuilder.add("assembly_slot.core", "Core");
+        translationBuilder.add("assembly_slot.brace", "Brace");
+        translationBuilder.add("assembly_slot.charm", "Charm");
+
+        translationBuilder.add("assembly.tooltip.unassembled", "Needs assembly in the toolkit");
+        translationBuilder.add("assembly.tooltip.parts", "Installed Parts");
+        translationBuilder.add("assembly.tooltip.stats", "Computed Stats");
+        translationBuilder.add("assembly.tooltip.part_slots", "Compatible Slots");
+
+        translationBuilder.add("assembly.error.required_slot", "Missing required slot: %s");
+        translationBuilder.add("assembly.error.required_trait", "Trait %s requires a matching part in slot %s");
+        translationBuilder.add("assembly.error.invalid_part", "Only modular parts can be inserted here");
+        translationBuilder.add("assembly.error.slot_mismatch", "%s cannot be installed into %s");
+
+        translationBuilder.add("assembly.mechanic.resonance", "Resonance: emits an arc spark on hit");
+        translationBuilder.add("assembly.mechanic.arc_damage", "Arc spark: +%s bonus hit damage");
+        translationBuilder.add("assembly.mechanic.wind_repair", "Wind tune: slowly repairs while carried");
+        translationBuilder.add("assembly.mechanic.fleet_grip", "Fleet grip: grants Haste after mining");
+        translationBuilder.add("assembly.mechanic.pulse", "Pulse core: right-click for a short speed burst");
+
+        translationBuilder.add("screen.past_poetry-lost_era.assembly_toolkit", "Tool Assembly");
+        translationBuilder.add("screen.past_poetry-lost_era.assembly_hint", "Combine a blank modular tool with compatible parts");
+        translationBuilder.add("screen.past_poetry-lost_era.tool_base", "Base");
+        translationBuilder.add("screen.past_poetry-lost_era.result", "Result");
+        translationBuilder.add("screen.past_poetry-lost_era.insert_tool", "Insert a blank modular tool");
+        translationBuilder.add("screen.past_poetry-lost_era.valid", "Assembly ready");
+        translationBuilder.add("screen.past_poetry-lost_era.invalid", "Assembly blocked");
+        translationBuilder.add(ModItemGroups.ASSEMBLY_WORKSHOP, "Assembly Workshop");
     }
 }

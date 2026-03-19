@@ -1,5 +1,7 @@
 package com.calypso.item;
 
+import com.calypso.assembly.ModAssemblyContent;
+import com.calypso.assembly.ToolAssemblyRegistry;
 import com.calypso.block.ModBlocks;
 import com.calypso.Past_PoetryLost_Era;
 import net.minecraft.item.ItemGroup;
@@ -15,6 +17,7 @@ public class ModItemGroups {
 //创造栏注册
     public static final RegistryKey<ItemGroup>  PRIMEVAL_JUNGLE = register("primeval_jungle");
     public static final RegistryKey<ItemGroup>  WALNUT_FOREST = register("walnut_forest");
+    public static final RegistryKey<ItemGroup>  ASSEMBLY_WORKSHOP = register("assembly_workshop");
 
     private static RegistryKey<ItemGroup> register(String id){
         return RegistryKey.of(RegistryKeys.ITEM_GROUP, new Identifier(Past_PoetryLost_Era.MOD_ID, id));
@@ -137,6 +140,15 @@ public class ModItemGroups {
                             entries.add(ModItems.DRIED_WALNUT);
                             entries.add(ModItems.WALNUT_MEAT);
                         }).build()
+        );
+        Registry.register(
+                Registries.ITEM_GROUP,
+                ASSEMBLY_WORKSHOP,
+                ItemGroup.create(ItemGroup.Row.TOP, 9)
+                        .displayName(Text.translatable("itemGroup.assembly_workshop"))
+                        .icon(() -> new ItemStack(ModAssemblyContent.ASSEMBLY_TOOLKIT))
+                        .entries((displayContext, entries) -> ToolAssemblyRegistry.allAssemblyItems(ModAssemblyContent.ASSEMBLY_TOOLKIT).forEach(entries::add))
+                        .build()
         );
     }
 }

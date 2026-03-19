@@ -1,5 +1,6 @@
 package com.calypso;
 
+import com.calypso.assembly.ModAssemblyContent;
 import com.calypso.block.ModBlocks;
 import com.calypso.entity.ModBoats;
 import com.calypso.item.ModItemGroups;
@@ -24,6 +25,7 @@ public class Past_PoetryLost_Era implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		ModAssemblyContent.register();
 		ModItems.registerItems();
 		ModItemGroups.registerGroups();
 		ModBlocks.registerModBlocks();

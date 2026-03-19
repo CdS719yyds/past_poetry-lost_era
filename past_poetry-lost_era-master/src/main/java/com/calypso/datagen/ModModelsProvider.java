@@ -1,5 +1,7 @@
 package com.calypso.datagen;
 
+import com.calypso.assembly.ModAssemblyContent;
+import com.calypso.assembly.ToolAssemblyRegistry;
 import com.calypso.block.ModBlockFamilies;
 import com.calypso.block.ModBlocks;
 import com.calypso.item.ModItems;
@@ -45,6 +47,8 @@ public class ModModelsProvider extends FabricModelProvider {
     //物品模型
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+        ModAssemblyContent.register();
+
         itemModelGenerator.register(ModItems.PRIMEVAL_JUNGLE_HANGING_SIGN, Models.GENERATED);
         itemModelGenerator.register(ModItems.PRIMEVAL_JUNGLE_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.PRIMEVAL_JUNGLE_CHEST_BOAT, Models.GENERATED);
@@ -55,5 +59,9 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.WALNUT_HANGING_SIGN, Models.GENERATED);
         itemModelGenerator.register(ModItems.WALNUT_BOAT, Models.GENERATED);
         itemModelGenerator.register(ModItems.WALNUT_CHEST_BOAT, Models.GENERATED);
+
+        itemModelGenerator.register(ModAssemblyContent.ASSEMBLY_TOOLKIT, Models.GENERATED);
+        ToolAssemblyRegistry.toolItems().forEach(item -> itemModelGenerator.register(item, Models.GENERATED));
+        ToolAssemblyRegistry.partItems().forEach(item -> itemModelGenerator.register(item, Models.GENERATED));
     }
 }

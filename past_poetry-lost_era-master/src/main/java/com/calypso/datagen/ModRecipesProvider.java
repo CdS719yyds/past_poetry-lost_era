@@ -1,6 +1,7 @@
 package com.calypso.datagen;
 
 import com.calypso.Past_PoetryLost_Era;
+import com.calypso.assembly.ModAssemblyContent;
 import com.calypso.block.ModBlocks;
 import com.calypso.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -11,6 +12,7 @@ import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 
@@ -94,6 +96,55 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         offerShapelessRecipe(consumer, ModBlocks.WALNUT_PLANKS, ModBlocks.STRIPPED_WALNUT_LOG, "stripped_walnut_log", 4);
         offerShapelessRecipe(consumer, ModBlocks.WALNUT_PLANKS, ModBlocks.WALNUT_WOOD, "walnut_wood", 4);
         offerShapelessRecipe(consumer, ModBlocks.WALNUT_PLANKS, ModBlocks.STRIPPED_WALNUT_WOOD, "stripped_walnut_wood", 4);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModAssemblyContent.ASSEMBLY_TOOLKIT)
+                .pattern(" PI")
+                .pattern(" SB")
+                .pattern("I  ")
+                .input('P', Items.PAPER)
+                .input('I', Items.IRON_INGOT)
+                .input('S', Items.STICK)
+                .input('B', Items.BOOK)
+                .criterion(hasItem(Items.BOOK), conditionsFromItem(Items.BOOK))
+                .offerTo(consumer, new Identifier(Past_PoetryLost_Era.MOD_ID, "assembly_toolkit"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModAssemblyContent.EXPEDITION_PICKAXE)
+                .pattern("III")
+                .pattern(" W ")
+                .pattern(" W ")
+                .input('I', Items.IRON_INGOT)
+                .input('W', ModBlocks.WALNUT_PLANKS)
+                .criterion(hasItem(ModBlocks.WALNUT_PLANKS), conditionsFromItem(ModBlocks.WALNUT_PLANKS))
+                .offerTo(consumer, new Identifier(Past_PoetryLost_Era.MOD_ID, "expedition_pickaxe"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, ModAssemblyContent.WARDEN_BLADE)
+                .pattern(" I ")
+                .pattern(" I ")
+                .pattern(" W ")
+                .input('I', Items.IRON_INGOT)
+                .input('W', ModBlocks.PRIMEVAL_JUNGLE_PLANKS)
+                .criterion(hasItem(ModBlocks.PRIMEVAL_JUNGLE_PLANKS), conditionsFromItem(ModBlocks.PRIMEVAL_JUNGLE_PLANKS))
+                .offerTo(consumer, new Identifier(Past_PoetryLost_Era.MOD_ID, "warden_blade"));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModAssemblyContent.FIELD_HAMMER)
+                .pattern("II ")
+                .pattern("IW ")
+                .pattern(" W ")
+                .input('I', Items.IRON_INGOT)
+                .input('W', ModBlocks.WALNUT_PLANKS)
+                .criterion(hasItem(ModBlocks.WALNUT_PLANKS), conditionsFromItem(ModBlocks.WALNUT_PLANKS))
+                .offerTo(consumer, new Identifier(Past_PoetryLost_Era.MOD_ID, "field_hammer"));
+
+        offerPartRecipe(consumer, ModAssemblyContent.OBSIDIAN_HEAD, Items.OBSIDIAN, Items.IRON_INGOT, "obsidian_head");
+        offerPartRecipe(consumer, ModAssemblyContent.SUNSTEEL_HEAD, Items.GOLD_INGOT, Items.IRON_INGOT, "sunsteel_head");
+        offerPartRecipe(consumer, ModAssemblyContent.WALNUT_HANDLE, ModBlocks.WALNUT_PLANKS, Items.STICK, "walnut_handle");
+        offerPartRecipe(consumer, ModAssemblyContent.PRIMEVAL_GRIP, ModBlocks.PRIMEVAL_JUNGLE_PLANKS, Items.STICK, "primeval_grip");
+        offerPartRecipe(consumer, ModAssemblyContent.REINFORCED_BINDING, Items.IRON_INGOT, Items.LEATHER, "reinforced_binding");
+        offerPartRecipe(consumer, ModAssemblyContent.BALANCED_GUARD, Items.IRON_NUGGET, Items.GOLD_NUGGET, "balanced_guard");
+        offerPartRecipe(consumer, ModAssemblyContent.STABILITY_BRACE, Items.COPPER_INGOT, Items.IRON_NUGGET, "stability_brace");
+        offerPartRecipe(consumer, ModAssemblyContent.RESONANCE_MODULE, Items.REDSTONE, Items.AMETHYST_SHARD, "resonance_module");
+        offerPartRecipe(consumer, ModAssemblyContent.WIND_CHARM, Items.FEATHER, Items.STRING, "wind_charm");
+        offerPartRecipe(consumer, ModAssemblyContent.PULSE_CORE, Items.REDSTONE, Items.ENDER_PEARL, "pulse_core");
     }
     //楼梯合成配方函数
     public static void offerStairsRecipe(Consumer<RecipeJsonProvider> consumer, RecipeCategory category, Block blockout, Block block_input, int count, String group) {
@@ -115,6 +166,17 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, itemout, count)
                 .input(item_input)
                 .criterion(hasItem(item_input),conditionsFromItem(item_input))
+                .offerTo(consumer, new Identifier(Past_PoetryLost_Era.MOD_ID, group));
+    }
+
+    public static void offerPartRecipe(Consumer<RecipeJsonProvider> consumer, Item output, ItemConvertible main, ItemConvertible support, String group) {
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, output)
+                .pattern(" M ")
+                .pattern("SMS")
+                .pattern(" S ")
+                .input('M', main)
+                .input('S', support)
+                .criterion(hasItem(main), conditionsFromItem(main))
                 .offerTo(consumer, new Identifier(Past_PoetryLost_Era.MOD_ID, group));
     }
 }

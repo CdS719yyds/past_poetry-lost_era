@@ -1,5 +1,7 @@
 package com.calypso.datagen;
 
+import com.calypso.assembly.ModAssemblyContent;
+import com.calypso.assembly.ToolAssemblyRegistry;
 import com.calypso.block.ModBlocks;
 import com.calypso.item.ModItemGroups;
 import com.calypso.item.ModItems;
@@ -113,5 +115,43 @@ public class ModZhCnLangProvider extends FabricLanguageProvider {
         //物品栏
         translationBuilder.add(ModItemGroups.PRIMEVAL_JUNGLE,"原始丛林");
         translationBuilder.add(ModItemGroups.WALNUT_FOREST,"核桃林");
+        translationBuilder.add(ModAssemblyContent.ASSEMBLY_TOOLKIT, "组装工具箱");
+        ToolAssemblyRegistry.toolItems().forEach(item -> translationBuilder.add(item, item.definition().name().chinese()));
+        ToolAssemblyRegistry.partItems().forEach(item -> translationBuilder.add(item, item.definition().name().chinese()));
+
+        translationBuilder.add("assembly_slot.head", "工具头");
+        translationBuilder.add("assembly_slot.binding", "连接件");
+        translationBuilder.add("assembly_slot.handle", "握柄");
+        translationBuilder.add("assembly_slot.module", "模块");
+        translationBuilder.add("assembly_slot.blade", "刃部");
+        translationBuilder.add("assembly_slot.guard", "护手");
+        translationBuilder.add("assembly_slot.core", "核心");
+        translationBuilder.add("assembly_slot.brace", "支撑件");
+        translationBuilder.add("assembly_slot.charm", "挂饰");
+
+        translationBuilder.add("assembly.tooltip.unassembled", "需要在组装工具箱中完成组装");
+        translationBuilder.add("assembly.tooltip.parts", "已安装配件");
+        translationBuilder.add("assembly.tooltip.stats", "计算属性");
+        translationBuilder.add("assembly.tooltip.part_slots", "可安装槽位");
+
+        translationBuilder.add("assembly.error.required_slot", "缺少必需槽位：%s");
+        translationBuilder.add("assembly.error.required_trait", "特性 %s 需要槽位 %s 中有匹配配件");
+        translationBuilder.add("assembly.error.invalid_part", "这里只能放入模组化配件");
+        translationBuilder.add("assembly.error.slot_mismatch", "%s 无法安装到 %s");
+
+        translationBuilder.add("assembly.mechanic.resonance", "共振：命中时释放电弧");
+        translationBuilder.add("assembly.mechanic.arc_damage", "电弧：额外造成 %s 点命中伤害");
+        translationBuilder.add("assembly.mechanic.wind_repair", "风调：携带时缓慢自修复");
+        translationBuilder.add("assembly.mechanic.fleet_grip", "疾握：采掘后获得急迫");
+        translationBuilder.add("assembly.mechanic.pulse", "脉冲核心：右键短暂爆发速度");
+
+        translationBuilder.add("screen.past_poetry-lost_era.assembly_toolkit", "工具组装台");
+        translationBuilder.add("screen.past_poetry-lost_era.assembly_hint", "将空白模组化工具与兼容配件组合");
+        translationBuilder.add("screen.past_poetry-lost_era.tool_base", "底座");
+        translationBuilder.add("screen.past_poetry-lost_era.result", "结果");
+        translationBuilder.add("screen.past_poetry-lost_era.insert_tool", "先放入一个空白模组化工具");
+        translationBuilder.add("screen.past_poetry-lost_era.valid", "可组装");
+        translationBuilder.add("screen.past_poetry-lost_era.invalid", "组装受阻");
+        translationBuilder.add(ModItemGroups.ASSEMBLY_WORKSHOP, "工具装配");
     }
 }
